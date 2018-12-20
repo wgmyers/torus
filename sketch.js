@@ -1,9 +1,3 @@
-function preload() {
-  // Ensure the .ttf or .otf font stored in the assets directory
-  // is loaded before setup() and draw() are called
-  font = loadFont('Roboto-Regular.otf');
-}
-
 var myCanvasPos;
 
 function setup() {
@@ -14,11 +8,8 @@ function setup() {
   myCanvasPos = myCanvas.position();
 
   /* Text settings */
-  textSize(15);
-  textColor = color("#DDDDDD");
-  textFont(font);
-  textAlign(LEFT, TOP);
-  bgColor = color("#333333")
+  bgColor = color("#000000");
+
 
   /* Light grey wireframe */
   noFill();
@@ -45,13 +36,6 @@ function draw() {
   var tube = tubeSlider.value();
   var wireColor;
   background(bgColor);
-  // FIXME - how the hell do we line up the slider labels with the slider?
-  // Seems to use different co-ordinate system to setup(), now 0,0 is center
-  // of the canvas.
-  //fill(textColor);
-  //text("Donut size", 100, 35);
-  //text("Tube radius", 100, 65);
-  //noFill();
 
   // Set colorMode to HSB before drawing torus, then set it back to RGB
   colorMode(HSB, 360);
