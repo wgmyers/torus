@@ -8,7 +8,7 @@ I don't know. They're both such good words.
 
 ## What is this, anyway?
 
-I'm having a play with p5.js.
+I'm having a play with [p5.js](https://p5js.org/).
 
 ## Why?
 
@@ -16,4 +16,12 @@ Why not?
 
 ## Can I see it?
 
-Not yet. But I'll upload it in a minute and then edit this.
+[Here](http://www.conniptions.org/torus/) you go.
+
+## Oh.
+
+Yes. Next stop, replace the torus with a chocolate teapot.
+
+## I don't think p5.js has a primitive for that.
+
+No, it doesn't.
