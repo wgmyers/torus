@@ -31,7 +31,7 @@ function setup() {
   tubeSlider.position(myCanvasPos.x + 20, myCanvasPos.y + 50);
   colorSlider = createSlider(0, 360, 100);
   colorSlider.position(myCanvasPos.x + 20, myCanvasPos.y + 80);
-  radiusLabel = createP("Donut Size");
+  radiusLabel = createP("Donut size");
   radiusLabel.position(myCanvasPos.x + radiusSlider.width + 40, myCanvasPos.y + 5);
   tubeLabel = createP("Tube radius");
   tubeLabel.position(myCanvasPos.x + tubeSlider.width + 40, myCanvasPos.y + 35);
