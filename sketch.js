@@ -1,7 +1,6 @@
-var myCanvasPos;
-
 function setup() {
   var myCanvas;
+  var myCanvasPos;
   var maxSize = 300;
   /* Vaguely mobile friendly canvas creation */
   if (displayWidth < 1200) {
@@ -15,14 +14,11 @@ function setup() {
   // We need to know where we are so we can position everything else
   myCanvasPos = myCanvas.position();
 
-  /* Text settings */
+  /* Basic display settings */
   bgColor = color("#000000");
 
-
-  /* Light grey wireframe */
+  /* We'll be wireframes */
   noFill();
-  line = color("#DDDDDD");
-  stroke(line);
 
   /* Set up some sliders */
   radiusSlider = createSlider(5, maxSize, maxSize / 2);
