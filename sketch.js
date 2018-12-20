@@ -2,9 +2,11 @@ var myCanvasPos;
 
 function setup() {
   var myCanvas;
+  var maxSize = 300;
   /* Vaguely mobile friendly canvas creation */
   if (displayWidth < 1200) {
     myCanvas = createCanvas(displayWidth, displayHeight, WEBGL);
+    maxSize = displayWidth / 4;
   } else {
     myCanvas = createCanvas(1200, 800, WEBGL);
   }
@@ -23,9 +25,9 @@ function setup() {
   stroke(line);
 
   /* Set up some sliders */
-  radiusSlider = createSlider(5,300,150);
+  radiusSlider = createSlider(5, maxSize, maxSize / 2);
   radiusSlider.position(myCanvasPos.x + 20, myCanvasPos.y + 20);
-  tubeSlider = createSlider(5,300,150);
+  tubeSlider = createSlider(5, maxSize, maxSize / 2);
   tubeSlider.position(myCanvasPos.x + 20, myCanvasPos.y + 50);
   colorSlider = createSlider(0, 360, 100);
   colorSlider.position(myCanvasPos.x + 20, myCanvasPos.y + 80);
