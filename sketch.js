@@ -24,11 +24,11 @@ function setup() {
   colorSlider = createSlider(0, 360, 100);
   colorSlider.position(myCanvasPos.x + 20, myCanvasPos.y + 80);
   radiusLabel = createP("Donut Size");
-  radiusLabel.position(myCanvasPos.x + 220, myCanvasPos.y + 5);
+  radiusLabel.position(myCanvasPos.x + radiusSlider.width + 40, myCanvasPos.y + 5);
   tubeLabel = createP("Tube radius");
-  tubeLabel.position(myCanvasPos.x + 220, myCanvasPos.y + 35);
+  tubeLabel.position(myCanvasPos.x + tubeSlider.width + 40, myCanvasPos.y + 35);
   colorLabel = createP("Colour");
-  colorLabel.position(myCanvasPos.x + 220, myCanvasPos.y + 65);
+  colorLabel.position(myCanvasPos.x + colorSlider.width + 40, myCanvasPos.y + 65);
 }
 
 function draw() {
