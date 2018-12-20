@@ -1,7 +1,13 @@
 var myCanvasPos;
 
 function setup() {
-  var myCanvas = createCanvas(1200, 800, WEBGL);
+  var myCanvas;
+  /* Vaguely mobile friendly canvas creation */
+  if (displayWidth < 1200) {
+    myCanvas = createCanvas(displayWidth, displayHeight, WEBGL);
+  } else {
+    myCanvas = createCanvas(1200, 800, WEBGL);
+  }
   /* myCanvas goes in donut div */
   myCanvas.parent('donut');
   // We need to know where we are so we can position everything else

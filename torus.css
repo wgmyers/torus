@@ -23,3 +23,12 @@ body {
 .centered {
   margin: auto;
 }
+
+/* Resize canvas on mobile devices */
+/* Also reposition sliders and labels */
+@media screen and (max-width: 1200px) {
+  canvas {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
